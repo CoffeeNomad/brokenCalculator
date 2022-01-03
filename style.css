@@ -1,0 +1,70 @@
+
+/*Change variables to fit classNames given in html*/
+
+
+html{
+	/*
+	Setting a base font for simpler calculations (1 rem = 10px)
+	*/
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+Doing this removes excess margin and padding
+*/
+
+body {
+	transition: 0.3s;
+	background: linear-gradient(90deg, #9796f0, #fbc7d4);
+}
+
+h1 {
+	font-size: 5rem;
+	/*font size is 5rem = 50px*/
+}
+
+/*Container variable which contains everything*/
+.container, .title {
+	margin-top: 2rem; /*container gets positioned down a little due to margin top*/
+	text-align: center; /*all elements get centered by this property*/
+
+}
+table {
+	margin: auto; /*by margin auto, the calculator also gets centered.*/
+	margin-top: 2rem;
+}
+.screen {
+	font-size: 2.5rem;
+	width: auto; /*doesn't do anything, witdh is set to auto by default.*/
+	border: 0.2rem solid black;
+	margin-top: 2rem;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 10px 10px 5px 0px rgba(46,35,35,0.75);
+	margin: 2rem;
+}
+.button, .operator {
+	font-size: 3rem;
+	color: white;
+	background: black;
+	width: 9rem;
+	height: 8rem; /*change width and height according to webpage contents*/
+	user-select: none;
+	cursor: pointer;
+	transition: 0.3s;
+
+}
+.button:hover, .operator:hover {
+	opacity: 0.7;
+}
+.button:active, .operator:active {
+	transition: 0.1s;
+	color: green;
+	transform: translateY(0.5rem);
+}
