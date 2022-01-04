@@ -1,7 +1,8 @@
-const result = document.querySelector('.screen');
+
 
 
 function display(value) {
+    const result = document.querySelector('.screen');
     result.value += value;
 }
 
