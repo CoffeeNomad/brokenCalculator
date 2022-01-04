@@ -1,4 +1,4 @@
-
+let id = null;
 
 
 function display(value) {
@@ -13,3 +13,16 @@ function solve() {
 function clearScreen() {
     result.value = '';
 }
+
+
+function fall() {
+  let elems = document.getElementsByClassName("button")   
+
+      for (let i = 0; i < elems.length; i++) {
+          const element = elems[i];
+          element.style.padding = Math.floor(Math.random() * 100)+ "px"; 
+         
+      }
+
+      //elem.style.left = pos + 'px'; 
+    }
