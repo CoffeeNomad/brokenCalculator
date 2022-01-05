@@ -1,17 +1,27 @@
 let id = null;
+let valid = true;
 
 
-function display(value) {
-    const result = document.querySelector('.screen');
-    result.value += value;
+function display(value, valid) {
+	if (valid) {
+    	const result = document.querySelector('.screen');
+    	result.value += value;
+	}
+	else {
+	    clearScreen();	
+		result = document.querySelector('.screen');
+		result.value += value;
+	}
 }
 
 function solve() {
+	valid = false;
     result.value = eval(result.value);
 }
 
 function clearScreen() {
     result.value = '';
+    valid = true;
 }
 
 
