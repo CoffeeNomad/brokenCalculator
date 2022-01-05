@@ -34,33 +34,33 @@
         </tr>
       </table>
       <div class="keys">
-        <input type="button" value="7" class="button" onclick="display('7')" />
-        <input type="button" value="8" class="button" onclick="display('8')" />
-        <input type="button" value="9" class="button" onclick="display('9')" />
-        <input type="button" value="/" class="button" onclick="display('/')" />
+        <input type="button" value="7" class="button" onclick="display('7', valid)" />
+        <input type="button" value="8" class="button" onclick="display('8', valid)" />
+        <input type="button" value="9" class="button" onclick="display('9', valid)" />
+        <input type="button" value="/" class="button" onclick="display('/', valid)" />
         <br />
-        <input type="button" value="4" class="button" onclick="display('4')" />
-        <input type="button" value="5" class="button" onclick="display('5')" />
-        <input type="button" value="6" class="button" onclick="display('6')" />
+        <input type="button" value="4" class="button" onclick="display('4', valid)" />
+        <input type="button" value="5" class="button" onclick="display('5', valid)" />
+        <input type="button" value="6" class="button" onclick="display('6', valid)" />
         <input
           type="button"
           value="*"
           class="operator"
-          onclick="display('*')"
+          onclick="display('*', valid)"
         />
         <br />
-        <input type="button" value="1" class="button" onclick="display('1')" />
-        <input type="button" value="2" class="button" onclick="display('2')" />
-        <input type="button" value="3" class="button" onclick="display('3')" />
+        <input type="button" value="1" class="button" onclick="display('1', valid)" />
+        <input type="button" value="2" class="button" onclick="display('2', valid)" />
+        <input type="button" value="3" class="button" onclick="display('3', valid)" />
         <input
           type="button"
           value="+"
           class="operator"
-          onclick="display('-')"
+          onclick="display('-', valid)"
         />
         <br />
-        <input type="button" value="0" class="button" onclick="display('0')" />
-        <input type="button" value="." class="button" onclick="display('.')" />
+        <input type="button" value="0" class="button" onclick="display('0', valid)" />
+        <input type="button" value="." class="button" onclick="display('.', valid)" />
         <input
           type="button"
           value="="
@@ -71,7 +71,7 @@
           type="button"
           value="-"
           class="operator"
-          onclick="display('+')"
+          onclick="display('+', valid)"
         />
       </div>
     </div>
