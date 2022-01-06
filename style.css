@@ -108,3 +108,26 @@ table {
 #clearButton{
   margin-right: 2rem;
 }
+
+.down {
+  animation-name: ani;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  position: relative;
+  /*top: 35rem;*/
+  transition: 0.3s;
+}
+.undo {
+  position: initial;
+}
+@keyframes ani{
+  0%{
+    top: 0rem;
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100%{
+    top: 32.1rem;
+  }
+}
