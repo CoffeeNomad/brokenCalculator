@@ -16,7 +16,7 @@ To open this project, click [here.](https://coffeenomad.github.io/brokenCalculat
 ```
 
 
-## List Of Malfunctions
+## List Of Intentional Malfunctions
 
 - Buttons fall down when clicked
 - Minus and Plus sign are interchanged
@@ -28,4 +28,5 @@ To open this project, click [here.](https://coffeenomad.github.io/brokenCalculat
 
 - Usage of `event listeners`.
 - Usage of `@keyframes` for animation in CSS
+- Uses of `pseudo-selectors` in css like `:hover` and `:active`
 
