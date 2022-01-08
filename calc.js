@@ -70,3 +70,16 @@ document.addEventListener("keydown", (e) => {
         clearScreen();
     }
 })
+let div = document.getElementById("all")
+
+document.addEventListener("keydown", function(e) {
+	if (e.keyCode == 13) {
+		div.classList.add("mirror");
+
+		document.addEventListener("keydown", function(f) {
+		if(div.classList.contains("mirror") && f.keyCode == 13) {
+			div.classList.add("unmirror")
+		}	
+		})
+	}
+})

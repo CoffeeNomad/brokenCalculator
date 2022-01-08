@@ -131,3 +131,12 @@ table {
     top: 32.1rem;
   }
 }
+
+.mirror {
+	transform: rotateY(180deg);
+	transition: 0.3s;
+}
+.unmirror {
+	transform: rotateY(0deg);
+	transition: 0.3s;
+}
