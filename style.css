@@ -1,7 +1,7 @@
 html {
   /*
-	Setting a base font for simpler calculations (1 rem = 10px)
-	*/
+  Setting a base font for simpler calculations (1 rem = 10px)
+  */
   font-size: 10px;
   scroll-behavior: smooth;
 }
@@ -27,12 +27,23 @@ body {
 
 h1 {
   animation-name: colorChanger;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   font-size: 5rem;
   font-family: monospace;
   text-shadow: 2px 2px #ff0000;
+  cursor: default;
+  transition: 0.3s;
+  user-select: none;
+
   /*font size is 5rem = 50px*/
+}
+
+h1:active {
+  cursor: default;
+  transform: rotateX(180deg);
+  transition: 0.3s;
+  user-select: none;
 }
 @keyframes colorChanger {
   0% {
@@ -71,7 +82,14 @@ table {
   padding-right: 4rem;
   text-align: left;
 }
-
+.screen:focus, .screen:active {
+  outline: none;
+}
+.screen:active {
+  transform: translateY(0.5rem);
+  opacity: 0.7;
+  transition: 0.3s;
+}
 .button,
 .operator {
   font-size: 3rem;
@@ -101,7 +119,7 @@ table {
 }
 
 .screen:hover {
-  border: 0.2rem solid black;
+  border: 0.2rem solid #2b2928;
   transition: 0.3s;
 }
 
